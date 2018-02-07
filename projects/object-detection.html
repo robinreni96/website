@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>TENSORFLOW OBJECT DETECTION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+        font-size: 200px
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+        </div>
+
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-red w3-center" style="padding:115px 16px">
+        <h3 class="w3-margin w3-jumbo">REALTIME OBJECT AND FACE DETECTION IN ANDROID USING TENSORFLOW OBJECT DETECTION API</h3>
+    </header>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+
+            <div class="w3">
+                <h2 style="color:firebrick;">Tensorflow-Mobile-Face-Detection</h2>
+
+                <p class="w3-text-grey">After the release of Tensorflow Lite on Nov 14th, 2017 which made it easy to develop and deploy Tensorflow models in mobile and embedded devices.There are many pre-trained models available for training your own set of images .In this project we developed a model using ssd-mobilenet and proposed a hypothesis that this model can also be used for facial Recognition .We trained the model using tensorflow object detection api .Then the inferenced model is deployed to a android app using Tensorflow android .Now this module can embedded with any of your app as a feature for facial recognition. </p>
+
+                <h4 style="color:firebrick;">Python Library Dependencies</h4>
+                <ul>
+                    <li>Tensorflow</li>
+                    <li>Pandas</li>
+                </ul>
+
+                <h4 style="color:firebrick;">Python Script Used</h4>
+                <ul>
+                    <li><b>xml_to_csv.py</b>- This code is used to convert the collection of xml of the images to a single csv file.</li>
+                    <li><b>generatetfrecord.py</b>- This code convert the csv to a tfrecord file.</li>
+                    <li><b>android</b>- This folder contains all the built android files for this project</li>
+                    <li><b>data</b>- It contains the csv and tefrecord of my image files.</li>
+                    <li><b>training</b>- This folder contains the ssd-mobilenet pre-trained model.</li>
+                </ul>
+
+                <h4 style="color:firebrick;">Project Github Link: <span><a href="https://github.com/robinreni96/tensorflow-mobile-face-detection">Mobile Face Detection</a></span></h4>
+                
+                <h4 style="color:firebrick;">Blog Link: <span><a href="https://www.skcript.com/svr/realtime-object-and-face-detection-in-android-using-tensorflow-object-detection-api/">Click Here</a></span></h4>
+                
+                <h4 style="color:firebrick;">OUTPUT ( Visit the Link ): <span><a href="https://vimeo.com/250737672">Click Here</a></span></h4>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-40">
+        <h3 class="w3-margin w3-large">"No Object is mysterious until its Detected"</h3>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-44 w3-center w3-opacity">
+        <p>Made with &#x2764; Robin Reni
+    </footer>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
