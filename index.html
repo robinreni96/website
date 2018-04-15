@@ -317,14 +317,14 @@
                     <!-- Service Box 4 -->
                     <div class="col-md-4 wp2 item delay-1s">
                         <img src="img/badges/data-science-foundations-level-2.png" alt="badge2" height="200" width="200">
-                            <h2 style="font-family: " Times New Roman ", Times, serif;">Data Science Level 2</h2>
+                        <h2 style="font-family: " Times New Roman ", Times, serif;">Data Science Level 2</h2>
                     </div>
                     <!-- Service Box 5-->
                     <div class="col-md-4 wp2 item delay-1s">
                         <img src="img/badges/statistics-101.png" alt="badge2" height="200" width="200">
-                            <h2 style="font-family: " Times New Roman ", Times, serif;">Statistics</h2>
+                        <h2 style="font-family: " Times New Roman ", Times, serif;">Statistics</h2>
                     </div>
-                   
+
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -332,7 +332,135 @@
         </div>
     </section>
 
+    <!-- ==========================
+        CERTIFICATION SECTION
+    =========================== -->
+    
+    
+    <div class="spacer-cta text-center">
+        <div class="container">
+            <div class="row">
+                 <h1 style="color:white">
+                    <span>CERTIFICATIONS</span>
+                </h1>
+            </div>
+        </div>
+    </div>
 
+
+    <section class="slide" id="slide">
+
+        <div class="container">
+             
+            <div class="mySlides">
+                <div class="numbertext">1 / 12</div>
+                <img src="img/certificates/nvidia_deep.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 12</div>
+                <img src="img/certificates/IBM_blockchain.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 12</div>
+                <img src="img/certificates/Google_digital.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 12</div>
+                <img src="img/certificates/NPTEL_Python.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 12</div>
+                <img src="img/certificates/NPTEL_mordern_app.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 12</div>
+                <img src="img/certificates/CC_Data.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">7 / 12</div>
+                <img src="img/certificates/CC_Data_method.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">8 / 12</div>
+                <img src="img/certificates/CC_Data_open.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">9 / 12</div>
+                <img src="img/certificates/CC_deep_learning.jpg"
+                     style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">10 / 12</div>
+                <img src="img/certificates/CC_deep_tensorflow.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">11 / 12</div>
+                <img src="img/certificates/CC_R.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">12 / 12</div>
+                <img src="img/certificates/CC_stat.jpg" style="width:100%">
+            </div>
+            
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            
+        </div>
+
+        <!-- ======================== script ============ -->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+
+        </script>
+    </section>
 
 
 
